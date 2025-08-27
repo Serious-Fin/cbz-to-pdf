@@ -10,6 +10,11 @@ Simply drag and drop the executable into the <ins>same folder with your cbz file
 
 ## Downloading
 
+There are two ways to download and launch this:
+
+- Download the executable directly (recommended)
+- Build the code from source yourself
+
 ### Download executable (Recommended)
 
 Download a [binary for your platform](https://github.com/Serious-Fin/cbz-to-pdf/releases) from release page.

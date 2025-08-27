@@ -6,7 +6,7 @@ Simple and quick way to convert CBZ files to PDF files without losing quality.
 
 Simply drag and drop the executable into the <ins>same folder with your cbz files</ins>. Double click on the executable and PDF files will be created in the same folder (one `.pdf` for each `.cbz` file)
 
-
+![demo](./demo/demo.gif)
 
 ## Downloading
 
@@ -22,19 +22,25 @@ chmod +x <binary name>
 
 ### Build from source (Advanced)
 
+#### Requirements
+
+- Go version 1.13 or later. [Download latest go version here](https://go.dev/doc/install)
+
+#### Steps
+
 Open a console window and clone repository locally:
 
 ```zsh
-git clone https://github.com/Serious-Fin/type-training.git
+git clone https://github.com/Serious-Fin/cbz-to-pdf.git
 ```
 
 Move into the cloned repository
 
 ```zsh
-cd type-training
+cd cbz-to-pdf
 ```
 
-Install all go dependencies (you might need to [install go if you haven't already](https://go.dev/doc/install) before this step)
+Install all go dependencies
 
 ```zsh
 go install
@@ -46,9 +52,8 @@ Build the project
 go build
 ```
 
-Now you should have an executable `type-training`. Run it with:
+Now you should have an executable `cbz-to-pdf`. Run it with double-click or via terminal:
 
 ```zsh
-./type-training
+./cbz-to-pdf
 ```
-

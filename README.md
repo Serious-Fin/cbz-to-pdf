@@ -20,7 +20,7 @@ On linux/mac you might need to add execution permission to file. Open terminal, 
 chmod +x <binary name>
 ```
 
-### Build from source (Advanced)
+### Build from source
 
 #### Requirements
 

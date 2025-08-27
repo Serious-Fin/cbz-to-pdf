@@ -14,7 +14,7 @@ Simply drag and drop the executable into the <ins>same folder with your cbz file
 
 Download a [binary for your platform](https://github.com/Serious-Fin/cbz-to-pdf/releases) from release page.
 
-On linux/mac you might need to add execution permission to file. Open terminal, do to the same directory as your downloaded file. Run:
+On linux/mac you might need to add execution permission to file. Open terminal, go to the same directory as your downloaded file. Run:
 
 ```zsh
 chmod +x <binary name>

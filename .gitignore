@@ -1,4 +1,6 @@
 *.cbz
+*.cbr
 *.pdf
 *.jpg
 *.DS_store
+__debug*

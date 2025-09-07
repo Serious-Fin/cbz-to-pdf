@@ -27,7 +27,7 @@ func main() {
 	}
 	exeDir := filepath.Dir(exePath)
 
-	files, err := getCBZFileNames(exeDir)
+	files, err := getArchiveFileNames(exeDir)
 	if err != nil {
 		log.Fatalf("Error reading files from current directory: %s", err.Error())
 	}
@@ -59,7 +59,7 @@ func createPdfFromArchive(archivePath, pdfName string) error {
 	return nil
 }
 
-func getCBZFileNames(dir string) ([]string, error) {
+func getArchiveFileNames(dir string) ([]string, error) {
 	cbzFiles := make([]string, 0)
 	files, err := os.ReadDir(dir)
 	if err != nil {
@@ -68,7 +68,7 @@ func getCBZFileNames(dir string) ([]string, error) {
 
 	for _, file := range files {
 		filename := file.Name()
-		if isCbzFile(filename) {
+		if isCbzFile(filename) || isCbrFile(filename) {
 			cbzFiles = append(cbzFiles, filename)
 		}
 	}
@@ -79,6 +79,13 @@ var cbzFileRegex = regexp.MustCompile(`.*\.[Cc][Bb][Zz]$`)
 
 func isCbzFile(filename string) bool {
 	matches := cbzFileRegex.FindStringSubmatch(filename)
+	return len(matches) == 1
+}
+
+var cbrFileRegex = regexp.MustCompile(`.*\.[Cc][Bb][Rr]$`)
+
+func isCbrFile(filename string) bool {
+	matches := cbrFileRegex.FindStringSubmatch(filename)
 	return len(matches) == 1
 }
 

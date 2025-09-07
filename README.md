@@ -1,6 +1,6 @@
-# CBZ to PDF
+# CBZ/CBR to PDF
 
-Simple and quick way to convert CBZ files to PDF files without losing quality.
+Simple and quick way to convert CBZ or CBR files to PDF files without losing quality.
 
 ## Demo
 
